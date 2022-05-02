@@ -1,0 +1,95 @@
+body {
+  font-family: "Roboto", sans-serif;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    h1 {
+      margin: 22px 20px;
+    }
+
+    a {
+      font-size: 20px;
+      margin: 30px 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+  }
+
+  .container::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+
+  .container {
+    height: 100vh;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    overflow-y: scroll;
+
+    .snap-scroll {
+      scroll-snap-align: start;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .info-card {
+      margin: 50px 20px;
+
+      .card-body {
+        text-align: center;
+
+        img {
+          display: block;
+          margin: auto;
+          width: 10rem;
+          border-radius: 50%;
+          border: 2px solid black;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .papers {
+      list-style: none;
+      margin: 50px 20px;
+
+      li {
+        margin: 5px 0px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

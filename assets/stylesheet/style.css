@@ -1,0 +1,122 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body header h1 {
+  margin: 22px 20px;
+}
+
+body header a {
+  font-size: 20px;
+  margin: 30px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+body .container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
+body .container {
+  height: 100vh;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body .container .snap-scroll {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .snap-scroll i {
+  -webkit-animation: arrowBlink 2s infinite;
+          animation: arrowBlink 2s infinite;
+}
+
+@-webkit-keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+body footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body footer .info-card {
+  margin: 50px 20px;
+}
+
+body footer .info-card .card-body {
+  text-align: center;
+}
+
+body footer .info-card .card-body img {
+  display: block;
+  margin: auto;
+  width: 10rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-bottom: 8px;
+}
+
+body footer .papers {
+  list-style: none;
+  margin: 50px 20px;
+}
+
+body footer .papers li {
+  margin: 5px 0px;
+}
+
+body footer .papers li a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
